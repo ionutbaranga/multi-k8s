@@ -1,6 +1,6 @@
-docker build -t ibaranga/multi-client:latest ibaranga/multi-client:$GIT_SHA -f ./client/Dockerfile ./client
-docker build -t ibaranga/multi-server:latest ibaranga/multi-server:$GIT_SHA -f ./server/Dockerfile ./server
-docker build -t ibaranga/multi-worker:latest ibaranga/multi-worker:$GIT_SHA -f ./worker/Dockerfile ./worker
+docker build -t ibaranga/multi-client:latest -t ibaranga/multi-client:$GIT_SHA -f ./client/Dockerfile ./client
+docker build -t ibaranga/multi-server:latest -t ibaranga/multi-server:$GIT_SHA -f ./server/Dockerfile ./server
+docker build -t ibaranga/multi-worker:latest -t ibaranga/multi-worker:$GIT_SHA -f ./worker/Dockerfile ./worker
 
 docker push ibaranga/multi-client:latest
 docker push ibaranga/multi-client:$GIT_SHA
