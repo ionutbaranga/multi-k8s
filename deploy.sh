@@ -15,4 +15,4 @@ kubectl apply -f k8s
 
 kubectl set image deployments/client-deployment client=ibaranga/multi-client:$GIT_SHA
 kubectl set image deployments/server-deployment server=ibaranga/multi-server:$GIT_SHA
-kubectl set image deployments/worker-deployment worler=ibaranga/multi-worker:$GIT_SHA
+kubectl set image deployments/worker-deployment worker=ibaranga/multi-worker:$GIT_SHA
